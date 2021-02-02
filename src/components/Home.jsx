@@ -3,10 +3,9 @@ import { connect } from 'react-redux'
 import { Button } from 'antd'
 
 const Home = (props) => {
-  console.log(props);
   return (
     <div>
-      <Button>测试按需加载</Button>
+      <Button type='primary' danger>测试按需加载</Button>
       <button onClick={() => {
         props.change()
       }}>点我dispatch</button>
@@ -18,7 +17,7 @@ const Home = (props) => {
 
 
 Home.defaultProps = {
-  limengjie: 'limengjie'
+  test: 'test'
 }
 const mapStateToProps = ({ fuck }) => ({ fuck })
 

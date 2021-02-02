@@ -5,7 +5,6 @@ import { Provider } from "react-redux";
 import Home from "./components/Home";
 import Tets from "./components/Test";
 
-console.log(store.getState());
 function App() {
   return (
     <Provider store={store}>
